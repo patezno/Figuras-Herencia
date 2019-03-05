@@ -1,24 +1,24 @@
-public class Rectangulo {
+public class Rectangulo extends FiguraGeometrica {
 
     // Atributos
 
     private double base = 0d;
     private double altura = 0d;
-    private String nombre = null;
 
     // Constructores
 
     public Rectangulo() {
+        super();
     }
 
     public Rectangulo(double base, double altura) {
+        super();
         this.base = base;
         this.altura = altura;
-        this.nombre = "Desconocido";
     }
 
     public Rectangulo(String nombre, double base, double altura) {
-        this.nombre = nombre;
+        super(nombre);
         this.base = base;
         this.altura = altura;
     }

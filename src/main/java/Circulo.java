@@ -1,22 +1,23 @@
-public class Circulo {
+public class Circulo extends FiguraGeometrica {
 
     // Atributos
 
     private int radio = 0;
-    private String nombre = null;
     private final double PI = Math.PI;
 
     // Constructores
 
     public Circulo() {
+        super();
     }
 
     public Circulo(int radio) {
+        super();
         this.radio = radio;
     }
 
     public Circulo(String nombre, int radio) {
-        this.nombre = nombre;
+        super(nombre);
         this.radio = radio;
     }
 

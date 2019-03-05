@@ -1,21 +1,22 @@
-public class Cuadrado {
+public class Cuadrado extends FiguraGeometrica {
 
     // Atributos
 
     private double lado = 0d;
-    private String nombre = null;
 
     // Constructores
 
     public Cuadrado() {
+        super();
     }
 
     public Cuadrado(double lado) {
+        super();
         this.lado = lado;
     }
 
     public Cuadrado(String nombre, double lado) {
-        this.nombre = nombre;
+        super(nombre);
         this.lado = lado;
     }
 

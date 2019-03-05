@@ -1,24 +1,25 @@
-public class Elipse {
+public class Elipse extends FiguraGeometrica {
 
     // Atributos
 
     private double semiEjeMayor = 0d;
     private double semiEjeMenor = 0d;
-    private String nommbre = null;
     private final double PI = Math.PI;
 
     // Constructores
 
     public Elipse() {
+        super();
     }
 
     public Elipse(double semiEjeMayor, double semiEjeMenor) {
+        super();
         this.semiEjeMayor = semiEjeMayor;
         this.semiEjeMenor = semiEjeMenor;
     }
 
     public Elipse(String nombre, double semiEjeMayor, double semiEjeMenor) {
-        this.nommbre = nombre;
+        super(nombre);
         this.semiEjeMayor = semiEjeMayor;
         this.semiEjeMenor = semiEjeMenor;
     }
