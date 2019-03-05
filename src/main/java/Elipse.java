@@ -1,2 +1,51 @@
 public class Elipse {
+
+    // Atributos
+
+    private double semiEjeMayor = 0d;
+    private double semiEjeMenor = 0d;
+    private String nommbre = null;
+    private final double PI = Math.PI;
+
+    // Constructores
+
+    public Elipse() {
+    }
+
+    public Elipse(double semiEjeMayor, double semiEjeMenor) {
+        this.semiEjeMayor = semiEjeMayor;
+        this.semiEjeMenor = semiEjeMenor;
+    }
+
+    public Elipse(String nombre, double semiEjeMayor, double semiEjeMenor) {
+        this.nommbre = nombre;
+        this.semiEjeMayor = semiEjeMayor;
+        this.semiEjeMenor = semiEjeMenor;
+    }
+
+    // Setters
+
+    public void setSemiEjeMayor(double semiEjeMayor) {
+        this.semiEjeMayor = semiEjeMayor;
+    }
+
+    public void setSemiEjeMenor(double semiEjeMenor) {
+        this.semiEjeMenor = semiEjeMenor;
+    }
+
+    // Getters
+
+    public double getSemiEjeMayor() {
+        return semiEjeMayor;
+    }
+
+    public double getSemiEjeMenor() {
+        return semiEjeMenor;
+    }
+
+    // Metodos
+
+    public double area() {
+        return PI * getSemiEjeMayor() * getSemiEjeMenor();
+    }
 }
