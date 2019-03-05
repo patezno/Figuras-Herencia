@@ -35,6 +35,7 @@ public class Circulo extends FiguraGeometrica {
 
     // Metodos
 
+    @Override
     public double area() {
         return PI * Math.pow(getRadio(), 2);
     }

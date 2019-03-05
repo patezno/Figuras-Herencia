@@ -46,6 +46,7 @@ public class Elipse extends FiguraGeometrica {
 
     // Metodos
 
+    @Override
     public double area() {
         return PI * getSemiEjeMayor() * getSemiEjeMenor();
     }

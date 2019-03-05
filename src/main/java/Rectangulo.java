@@ -45,6 +45,7 @@ public class Rectangulo extends FiguraGeometrica {
 
     // Metodos
 
+    @Override
     public double area() {
         return getBase() * getAltura();
     }

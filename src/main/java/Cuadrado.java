@@ -34,6 +34,7 @@ public class Cuadrado extends FiguraGeometrica {
 
     // Metodos
 
+    @Override
     public double area() {
         return Math.pow(getLado(), 2);
     }
